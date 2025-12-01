@@ -11,6 +11,10 @@ This plugin is built for **LazyVim + Harpoon 2 + Neo-tree** users who want:
 * Perfect synchronization with Harpoon 2
 * Automatic creation + cleanup of the sidebar window
 
+## Preview
+
+![Harpoon Sidebar](docs/screenshot.png)
+
 ## ✨ Features
 
 * Automatically opens a Harpoon sidebar whenever Neo-tree opens
@@ -25,7 +29,7 @@ This plugin is built for **LazyVim + Harpoon 2 + Neo-tree** users who want:
 
 ```lua
 {
-  "nick/harpoon2-sidebar.nvim",
+  "NickStafford2/harpoon2-sidebar.nvim",
   dependencies = { "ThePrimeagen/harpoon" },
   opts = {},
 }
@@ -39,7 +43,7 @@ However you can override the default keymap by disabling defaults:
 
 ```lua
 {
-  "nick/harpoon2-sidebar.nvim",
+  "NickStafford2/harpoon2-sidebar.nvim",
   opts = {
     default_mappings = false,
   },
