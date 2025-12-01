@@ -29,7 +29,7 @@ This plugin is built for **LazyVim + Harpoon 2 + Neo-tree** users who want:
 
 ```lua
 {
-  "NickStafford2/harpoon2-sidebar.nvim",
+  "NickStafford2/harpoon-sidebar.nvim",
   dependencies = { "ThePrimeagen/harpoon" },
   opts = {},
 }
@@ -43,7 +43,7 @@ However you can override the default keymap by disabling defaults:
 
 ```lua
 {
-  "NickStafford2/harpoon2-sidebar.nvim",
+  "NickStafford2/harpoon-sidebar.nvim",
   opts = {
     default_mappings = false,
   },
@@ -80,7 +80,7 @@ The plugin never overwrites real buffers and never steals focus unintentionally.
 ## 📁 File Structure
 
 ```
-harpoon2-sidebar.nvim/
+harpoon-sidebar.nvim/
 ├── lua/
 │   └── harpoon_sidebar/
 │       ├── init.lua
@@ -96,7 +96,7 @@ For local development:
 
 ```lua
 {
-  dir = "~/Projects/harpoon2-sidebar.nvim",
+  dir = "~/Projects/harpoon-sidebar.nvim",
   dev = true,
 }
 ```
