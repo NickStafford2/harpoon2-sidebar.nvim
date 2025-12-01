@@ -82,7 +82,7 @@ A template repository used to create Neovim plugins.
 {
     "ColinKennedy/nvim-best-practices-plugin-template",
     config = function()
-        vim.g.plugin_template_configuration = {
+        vim.g.harpoon_sidebar_configuration = {
             commands = {
                 goodnight_moon = { read = { phrase = "A good book" } },
                 hello_world = {
@@ -133,7 +133,7 @@ A template repository used to create Neovim plugins.
 <!-- TODO: (you) - Remove this is you do not want lualine -->
 
 > Note: You can customize lualine colors here or using
-> `vim.g.plugin_template_configuration`.
+> `vim.g.harpoon_sidebar_configuration`.
 
 [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
@@ -143,7 +143,7 @@ require("lualine").setup {
         lualine_y = {
             -- ... Your other configuration ...
             {
-                "plugin_template",
+                "harpoon_sidebar",
                 -- NOTE: These will override default values
                 -- display = {
                 --     goodnight_moon = {color={fg="#FFFFFF"}, text="Custom message 1"}},
@@ -160,7 +160,7 @@ require("lualine").setup {
 <!-- TODO: (you) - Remove this is you do not want telescope -->
 
 > Note: You can customize telescope colors here or using
-> `vim.g.plugin_template_configuration`.
+> `vim.g.harpoon_sidebar_configuration`.
 
 [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
@@ -170,7 +170,7 @@ require("lualine").setup {
     cmd = "Telescope",
     config = function()
         -- ... Your other configuration ...
-        require("telescope").load_extension("plugin_template")
+        require("telescope").load_extension("harpoon_sidebar")
     end,
     dependencies = {
         "ColinKennedy/nvim-best-practices-plugin-template",
@@ -200,7 +200,7 @@ Here are some example commands:
 
 <!-- TODO: (you) - You'll probably want to change all this or remove it. See -->
 
-<!-- plugin/plugin_template.lua for details. -->
+<!-- plugin/harpoon_sidebar.lua for details. -->
 
 ```vim
 " A typical subcommand

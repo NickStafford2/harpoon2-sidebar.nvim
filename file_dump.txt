@@ -7,9 +7,9 @@
 ├── CHANGELOG.md
 ├── doc
 │   ├── news.txt
-│   ├── plugin_template_api.txt
+│   ├── harpoon_sidebar_api.txt
 │   ├── plugin-template.txt
-│   ├── plugin_template_types.txt
+│   ├── harpoon_sidebar_types.txt
 │   └── tags
 ├── .github
 │   ├── ISSUE_TEMPLATE
@@ -36,8 +36,8 @@
 ├── lua
 │   ├── lualine
 │   │   └── components
-│   │       └── plugin_template.lua
-│   ├── plugin_template
+│   │       └── harpoon_sidebar.lua
+│   ├── harpoon_sidebar
 │   │   ├── _commands
 │   │   │   ├── arbitrary_thing
 │   │   │   │   ├── parser.lua
@@ -64,7 +64,7 @@
 │   │   └── types.lua
 │   └── telescope
 │       └── _extensions
-│           └── plugin_template
+│           └── harpoon_sidebar
 │               ├── init.lua
 │               └── runner.lua
 ├── .luacheckrc
@@ -77,7 +77,7 @@
 │       │   └── index.md
 │       └── .gitkeep
 ├── plugin
-│   └── plugin_template.lua
+│   └── harpoon_sidebar.lua
 ├── README.md
 ├── renovate.json
 ├── scripts
@@ -87,12 +87,12 @@
 │       └── minimal_init.lua
 ├── spec
 │   ├── minimal_init.lua
-│   ├── plugin_template
+│   ├── harpoon_sidebar
 │   │   ├── configuration_spec.lua
 │   │   ├── configuration_tools_lualine_spec.lua
 │   │   ├── configuration_tools_telescope_spec.lua
 │   │   ├── lualine_spec.lua
-│   │   ├── plugin_template_spec.lua
+│   │   ├── harpoon_sidebar_spec.lua
 │   │   └── telescope_spec.lua
 │   └── test_utilities
 │       ├── mock_test.lua

@@ -6,37 +6,37 @@ These types are either required by the Lua API or required for the normal
 operation of this Lua plugin.
 
 ------------------------------------------------------------------------------
-*plugin_template.Configuration*
+*harpoon_sidebar.Configuration*
    The user's customizations for this plugin.
 
 Fields ~
-    {commands} |plugin_template.ConfigurationCommands|?
+    {commands} |harpoon_sidebar.ConfigurationCommands|?
        Customize the fallback behavior of all `:PluginTemplate` commands.
-    {logging} |plugin_template.LoggingConfiguration|?
+    {logging} |harpoon_sidebar.LoggingConfiguration|?
        Control how and which logs print to file / Neovim.
-    {tools} |plugin_template.ConfigurationTools|?
+    {tools} |harpoon_sidebar.ConfigurationTools|?
        Optional third-party tool integrations.
 
 ------------------------------------------------------------------------------
-*plugin_template.ConfigurationCommands*
+*harpoon_sidebar.ConfigurationCommands*
    Customize the fallback behavior of all `:PluginTemplate` commands.
 
 Fields ~
-    {goodnight_moon} |plugin_template.ConfigurationGoodnightMoon|?
+    {goodnight_moon} |harpoon_sidebar.ConfigurationGoodnightMoon|?
        The default values when a user calls `:PluginTemplate goodnight-moon`.
-    {hello_world} |plugin_template.ConfigurationHelloWorld|?
+    {hello_world} |harpoon_sidebar.ConfigurationHelloWorld|?
        The default values when a user calls `:PluginTemplate hello-world`.
 
 ------------------------------------------------------------------------------
-*plugin_template.ConfigurationGoodnightMoon*
+*harpoon_sidebar.ConfigurationGoodnightMoon*
    The default values when a user calls `:PluginTemplate goodnight-moon`.
 
 Fields ~
-    {read} |plugin_template.ConfigurationGoodnightMoonRead|?
+    {read} |harpoon_sidebar.ConfigurationGoodnightMoonRead|?
        The default values when a user calls `:PluginTemplate goodnight-moon read`.
 
 ------------------------------------------------------------------------------
-*plugin_template.LoggingConfiguration*
+*harpoon_sidebar.LoggingConfiguration*
    Control whether or not logging is printed to the console or to disk.
 
 Fields ~
@@ -62,7 +62,7 @@ Fields ~
        Defaults to "/home/selecaoone/.local/share/nvim/plugin_name.log".
 
 ------------------------------------------------------------------------------
-*plugin_template.ConfigurationGoodnightMoonRead*
+*harpoon_sidebar.ConfigurationGoodnightMoonRead*
    The default values when a user calls `:PluginTemplate goodnight-moon read`.
 
 Fields ~
@@ -70,15 +70,15 @@ Fields ~
        The book to read if no book is given by the user.
 
 ------------------------------------------------------------------------------
-*plugin_template.ConfigurationHelloWorld*
+*harpoon_sidebar.ConfigurationHelloWorld*
    The default values when a user calls `:PluginTemplate hello-world`.
 
 Fields ~
-    {say} |plugin_template.ConfigurationHelloWorldSay|?
+    {say} |harpoon_sidebar.ConfigurationHelloWorldSay|?
        The default values when a user calls `:PluginTemplate hello-world say`.
 
 ------------------------------------------------------------------------------
-*plugin_template.ConfigurationHelloWorldSay*
+*harpoon_sidebar.ConfigurationHelloWorldSay*
    The default values when a user calls `:PluginTemplate hello-world say`.
 
 Fields ~
@@ -89,16 +89,16 @@ Fields ~
        Control how the text is displayed. e.g. "uppercase" changes "hello" to "HELLO".
 
 ------------------------------------------------------------------------------
-*plugin_template.ConfigurationTools*
+*harpoon_sidebar.ConfigurationTools*
    Optional third-party tool integrations.
 
 Fields ~
-    {lualine} |plugin_template.ConfigurationToolsLualine|?
+    {lualine} |harpoon_sidebar.ConfigurationToolsLualine|?
        A Vim statusline replacement that will show the command that the user just ran.
 
 ------------------------------------------------------------------------------
-*plugin_template.ConfigurationToolsLualineData*
-   The display values that will be used when a specific `plugin_template`
+*harpoon_sidebar.ConfigurationToolsLualineData*
+   The display values that will be used when a specific `harpoon_sidebar`
    command runs.
 
 Fields ~
