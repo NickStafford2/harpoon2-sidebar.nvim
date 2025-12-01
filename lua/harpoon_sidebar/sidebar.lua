@@ -135,11 +135,20 @@ local function ensure_buf()
 
     buf = vim.api.nvim_create_buf(false, false)
 
+    -- Mark this buffer as the Harpoon sidebar so we can
+    -- recognize its windows from other modules.
+    vim.b[buf].harpoon_sidebar = true
+
     vim.bo[buf].buftype = "nofile"
     vim.bo[buf].buflisted = false
     vim.bo[buf].bufhidden = "wipe"
     vim.bo[buf].swapfile = false
-    vim.bo[buf].filetype = "harpoon-sidebar"
+
+    -- Use 'qf' filetype so Neo-tree will not use this window
+    -- for opening files, because its default
+    -- `open_files_do_not_replace_types` includes "qf".
+    vim.bo[buf].filetype = "qf"
+
     vim.bo[buf].modifiable = false
     vim.bo[buf].readonly = true
 

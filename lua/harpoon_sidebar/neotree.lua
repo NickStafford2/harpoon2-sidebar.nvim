@@ -13,7 +13,7 @@ end
 local function sidebar_exists()
     for _, win in ipairs(vim.api.nvim_tabpage_list_wins(0)) do
         local b = vim.api.nvim_win_get_buf(win)
-        if vim.bo[b].filetype == "harpoon-sidebar" then
+        if vim.b[b] and vim.b[b].harpoon_sidebar then
             return true
         end
     end
@@ -99,7 +99,7 @@ vim.api.nvim_create_autocmd("WinClosed", {
         -- Close sidebars in same tab
         for _, win in ipairs(vim.api.nvim_tabpage_list_wins(0)) do
             local b = vim.api.nvim_win_get_buf(win)
-            if vim.bo[b].filetype == "harpoon-sidebar" then
+            if vim.b[b] and vim.b[b].harpoon_sidebar then
                 pcall(vim.api.nvim_win_close, win, true)
             end
         end
