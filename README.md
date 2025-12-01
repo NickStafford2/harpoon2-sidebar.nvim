@@ -3,13 +3,7 @@
 A small Neovim plugin that automatically opens a **Harpoon 2 sidebar** under Neo-tree.
 Whenever you open Neo-tree, a synchronized, read-only Harpoon list appears below it.
 
-This plugin is built for **LazyVim + Harpoon 2 + Neo-tree** users who want:
-
-* A persistent visual Harpoon list
-* Auto-updating when files are added/removed
-* Read-only list (no accidental deletion)
-* Perfect synchronization with Harpoon 2
-* Automatic creation + cleanup of the sidebar window
+This plugin is built for **LazyVim + Harpoon 2 + Neo-tree** users who want to see their harpoon buffer names. Prime will hate this but I find it nice.
 
 ## Preview
 
