@@ -13,7 +13,7 @@ This plugin is built for **LazyVim + Harpoon 2 + Neo-tree** users who want:
 
 ## Preview
 
-![Harpoon Sidebar](docs/screenshot.png)
+![Harpoon Sidebar](doc/screenshot.png)
 
 ## ✨ Features
 
